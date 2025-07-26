@@ -1,141 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-stories/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/project-stories/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-stories/assets/styles-r6SaaQ-x.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/project-stories/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
-    </div>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO META -->
+  <meta name="title" content="Dazzly Stories: Ambre's Secret – Parisian Puzzle Adventure" />
+  <meta name="description"
+    content="Step into a magical mansion in the heart of Paris. Join Ambre and uncover her family's secrets through a narrative gem-matching journey. Explore, restore, and decide her fate in Dazzly Stories: Ambre’s Secret." />
+  <meta name="keywords"
+    content="Dazzly Stories, Ambre's Secret, gemstone game, Paris puzzle adventure, story-driven puzzle game, jewelry restoration, interactive fiction, cozy mystery game, narrative match-3, relaxing mobile game" />
+  <meta name="author" content="Clarivo Studios" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://clarivo.space" />
+  <!-- Open Graph META -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clarivo.space" />
+  <meta property="og:title" content="Dazzly Stories: Ambre's Secret – Uncover a Gemstone Mystery in Paris" />
+  <meta property="og:description"
+    content="Help Ambre solve the mystery of her aunt’s disappearance by exploring a magical mansion, restoring antique jewelry, and uncovering family secrets. Download the free game today!" />
+  <meta property="og:image" content="https://clarivo.space/og-image-ambre.jpg" />
+  <meta property="og:site_name" content="Clarivo" />
+  <!-- Twitter META -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://clarivo.space" />
+  <meta name="twitter:title" content="Dazzly Stories: Ambre's Secret – Magical Puzzle Game in Paris" />
+  <meta name="twitter:description"
+    content="Explore a mysterious Parisian mansion and uncover family secrets through puzzles and restoration. Follow Ambre on a magical journey of gemstones and legacy." />
+  <meta name="twitter:image" content="https://clarivo.space/og-image-ambre.jpg" />
+  <meta name="twitter:creator" content="@dazzlystories" />
+  <!-- App Specific -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Dazzly Stories: Ambre’s Secret" />
+  <title>DAZZLY STORIES</title>
+  <link rel="shortcut icon" href="/project-stories/assets/logo-desc@2x-min-God-H9Hr.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script type="module" crossorigin src="/project-stories/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/project-stories/assets/index-sv1eDRnK.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container header-container">
+    <a href="../index.html" class="header-logo">
+      <img class="logo-img" src="/project-stories/assets/logo-desc@2x-min-God-H9Hr.png" alt="wed-site logo" width="32" height="32">
+    </a>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link-home" href="">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Key Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Characters</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Download</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="mobile-open-btn">
+      <svg width="22" height="20">
+        <use href="../img/sprite.svg#burger-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/project-stories/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
+  <main>
+    <section id="hero" class="hero">
+  <div class="container hero-container">
+    <div class="hero-info">
+      <div class="main-hero-info">
+        <h1 class="hero-title">DAZZLY STORIES: AMBRE’S SECRET</h1>
+        <p class="hero-text">Uncover the Past, Sparkle the Future</p>
+
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.geode.dazzlystories&hl=en&gl=us&pli=1" target="_blank"
+        class="hero-link">
+        FOLLOW AMBRE
       </a>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
   </div>
+
 </section>
+    
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
+  </main>
 
 
-  </body>
+
+</body>
+
 </html>
