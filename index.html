@@ -43,9 +43,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <script type="module" crossorigin src="/project-stories/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/project-stories/assets/footer-CFZ8IdFd.js">
+  <link rel="modulepreload" crossorigin href="/project-stories/assets/footer-Dm0a5Ylo.js">
   <link rel="modulepreload" crossorigin href="/project-stories/assets/vendor-C8ggdwn1.js">
-  <link rel="stylesheet" crossorigin href="/project-stories/assets/footer-C4LL-aU4.css">
+  <link rel="stylesheet" crossorigin href="/project-stories/assets/footer-Bj4mgn0q.css">
   <link rel="stylesheet" crossorigin href="/project-stories/assets/vendor-HdWFjXwp.css">
 </head>
 
@@ -65,7 +65,7 @@
         <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
       </ul>
     </nav>
-    <button type="button" class="mobile-open-btn">
+    <button type="button" class="mobile-menu-open" aria-controls="mobile-menu" aria-expanded="false">
       <svg width="22" height="20">
         <use href="/project-stories/assets/sprite-RTB-WaPG.svg#burger-menu"></use>
       </svg>
@@ -619,7 +619,25 @@
     </div>
   </div>
 </div>
-
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true" role="navigation">
+  <div class="mobile-menu-container">
+    <button type="button" id="mobile-menu-close" class="mobile-menu-close" data-action="close" aria-label="close menu">
+      <svg class="mob-menu-close" width="17.5" height="17.5">
+        <use href="/project-stories/assets/sprite-RTB-WaPG.svg#x"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu-content">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="#hero" class="menu-link-home">Home</a></li>
+        <li class="mobile-menu-item"><a href="#about" class="menu-link">About</a></li>
+        <li class="mobile-menu-item"><a href="#features" class="menu-link">Key Features</a></li>
+        <li class="mobile-menu-item"><a href="#characters" class="menu-link">Characters</a></li>
+        <li class="mobile-menu-item"><a href="#gallery" class="menu-link">Gallery</a></li>
+        <li class="mobile-menu-item"><a href="#download" class="menu-link">Download</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 </body>
 
