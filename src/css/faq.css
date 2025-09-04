@@ -54,15 +54,6 @@
   text-align: left;
   position: relative;
   z-index: 2;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  border-radius: 20px;
-  height: 48px;
-  padding: 0 0 0 24px;
-  width: 288px;
-  background: #f4b549; */
   color: #b87000;
 }
 

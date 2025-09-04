@@ -61,6 +61,7 @@
 }
 
 .hero-link {
+  text-decoration: none;
   position: relative;
   overflow: hidden;
   border: none;
